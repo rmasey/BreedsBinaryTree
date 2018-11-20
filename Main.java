@@ -31,7 +31,7 @@ public class Main {
     }
 
     public static void addNodeRecursively(Node root, Node newNode){
-        if(newNode.getBreed().compareTo(root.getBreed()) < 0 ){ //Go LEFT  <0 means getBreed is less than name
+        if(newNode.getBreed().compareTo(root.getBreed()) < 0 ){ //Go LEFT, true if newNod.getBreed is less than root.getBreed
             if(root.getLeftNode() == null){ //If parent (root) has no child node to left:
                 root.setLeftNode(newNode);
             }else{ //If child node (to left) does exist:
