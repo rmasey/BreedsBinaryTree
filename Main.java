@@ -23,55 +23,11 @@ public class Main {
         System.out.println("Enter breed of dog: ");
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
-        Node currentNode = root;
+        Node breedNode = root;
 
-        boolean found = false;
-        boolean stop = false;
-
-        //enter code here
-        while ( found==false && stop == false){
-            System.out.println("Currnet node vaue is " + currentNode.getBreed());
-
-            if (currentNode.getBreed().equals(name)){
-                System.out.println(name + " is in the tree");
-                found = true;
-            } else if (name.compareTo(currentNode.getBreed())>0) {  // true if name > getBreed
-                System.out.println("name is greater than current node value");
-                if (currentNode.getRightNode() == null) {
-                    System.out.println(name + " is not in the tree rigg");
-                    stop = true;
-                } else{
-                    currentNode = currentNode.getRightNode();
-                }
-
-            }else {
-                System.out.println("name is not greater than current node value");
-                System.out.println("current nodee " +currentNode.getBreed());
-
-                if (currentNode.getLeftNode() == null) {
-                    System.out.println(name + " is not in the tree");
-                    stop = true;
-                } else{
-                    currentNode = currentNode.getLeftNode();
-                }
-
-            }
-        }
-
-        //enter code here
-        // while (currentNode != null && found==false){
-        // if (currentNode.getBreed().equals(name)){
-        // System.out.println(name + " is in the tree");
-        // found = true;
-        // } else if (currentNode.getBreed().compareTo(name)==1){
-        // currentNode = currentNode.getLeftNode();
-        // }else {
-        // currentNode = currentNode.getRightNode();
-        // }
-        // }
-        // if (found == false){
-        // System.out.println(name + " is not in the tree");
-        // }
+        //put your code here to see if a breed is in the tree!
+        //you can use compareTo() to compare strings, see https://www.tutorialspoint.com/java/lang/string_compareto.htm 
+        
     }
 
     public static void addNodeRecursively(Node root, Node newNode){
