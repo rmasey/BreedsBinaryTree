@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Node root = new Node("Harrier");
-        Node node2 = new Node("Greyhoud");
+        Node node2 = new Node("Greyhound");
         Node node3 = new Node("Rottweiler");
         Node node4 = new Node("Chihuahua");
         Node node5 = new Node("Pug");
